@@ -1,0 +1,53 @@
+diff csr and ssr 
+make ssr todo application using e.js
+implement authentication and error hadling middleware in it 
+
+
+
+
+in mongodb data is stored in documents ans not i rows like sql databases 
+relational databased like mysql contains data which is -
+                              1. structured
+                              2. stored in thables
+                              3. has a strict schema
+                            
+in mongodb instead of collection we use collection and instead
+mongodb is designed for flexibility second point scalability messy real world data
+
+
+Problems with relational databases-
+rigid schema
+complex relationship(joins)
+----------------->joins are slow query becoms complex 
+hard to scale
+horizontal scale
+
+
+Core concept of nosqql database-
+schema less
+denormalisation
+
+
+when to use mongodb-
+use mongodb when data is unstructured or semi structured rapid development needed 
+when hight read write is required (chatgpt)
+nestes data is common
+
+//BSON->Binary json
+why we using bson instead of json?
+=>Faster Processing->Binary format faster read write.
+=>Support more Datatypes.Bson supports string,number,boolean,array,dates,object,binary data,object id etc.
+=>Bson is much  more optimised for machine than json.
+
+//Collectons
+Collectons is a group of documnet similar to table in sql.
+=>Property->does not have fixed schema, support dynamic growth(did not defined structure before hand).
+//
+
+//Embedding document and refrencing ->In Embedding instead of using relation we create nested documnet where as in refrencing we create seprate collection
+and one documnet of first collection can reffer to a document of other collection using its object id .//
+
+//Analogy of indexes->
+We reading a book we try to find topic without indexing we will search each page of the bool where as if we have indexes we directly jump
+to the page witch contains the topic
+//

@@ -1,13 +1,50 @@
+
+
 const getPostsList = (req, res) => {
-    res.send("blog list");
+    
+    res.send("ye le sari post");
 };
 
 const addNewPost = (req, res) => {
-    res.send("blog post");
+    console.log("Body:", req.body);
+    console.log("Query:", req.query);
+
+    res.send("kardi post");
 };
 
 const sendPostById = (req, res) => {
-    res.send("inside blog");
+    console.log("id:", req.params.id);
+    
+
+    res.send("ye le particular id ki post");
 };
 
-module.exports = { getPostsList, addNewPost, sendPostById };
+const updatePost = (req, res) => {
+    console.log("id:", req.params.id);
+   
+
+    res.send("kardiya update");
+};
+
+const patchPost = (req, res) => {
+    console.log("id:", req.params.id);
+    
+
+    res.send("partially update kardi");
+};
+
+const deletePost = (req, res) => {
+    console.log("id:", req.params.id);
+    
+
+    res.send("deleted");
+};
+
+module.exports = {
+    getPostsList,
+    addNewPost,
+    sendPostById,
+    updatePost,
+    patchPost,
+    deletePost
+};
